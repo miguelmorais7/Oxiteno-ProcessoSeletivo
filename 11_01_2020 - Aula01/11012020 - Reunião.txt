@@ -1,0 +1,55 @@
+
+Data e Hora
+11/01/2021
+Objetivo
+Início da formação, if, array, tipos de linguagens
+
+Anotações:
+
+- Pesquisar por:
+		-  Hardskills
+		-  Softskills
+- Pesquisar sobre linguagem tipada/não-tipada
+- Overview dos próximos temas
+- link codepen https://codepen.io/trending
+
+Parte Teórica: 
+
+Strings sempre entre aspas
+Exemplos de algoritmo: Cadastrar usuário, abrir chamado, pagar boleto, etc.
+Typescript (pré-processador Js) -> linguagem tipada;  Estrutura: nomeDaVariavel: tipo = valo (CamelCase)
+
+Exercícios:
+
+
+Algoritmo - elucidação - receita para fritar um ovo
+1- Ir até a cozinha
+2- Abrir a geladeira 
+	if (!ovo)
+		ir até o mercado mais próximo e comprar
+	endif
+3- Pegar o ovo
+4- Quebrar o ovo em um recipiente
+	if (ovo == estragado)
+		jogue fora e pegue outro ovo
+	endif
+5- Adicionar sal/tempero
+6- Abrir o armário
+7- Pegar a frigideira
+8- Pegar óleo/azeite
+	if (!oleo||azeite)
+		ir até o mercado mais próximo e comprar
+	endif
+9- Adicionar óleo/azeite na frigideira
+10- Colocar a frigideira no fogão
+11- Ligar o fogão
+12- Despejar o ovo na frigideira
+13 - Pegar uma espátula
+14- Fritar o ovo em fogo baixo
+15- Servir o ovo
+
+Duvidas: 
+
+	uso de Matriz em JavaScript
+		
+
