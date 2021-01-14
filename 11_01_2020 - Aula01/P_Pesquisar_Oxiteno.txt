@@ -1,0 +1,7 @@
+Pesquisar
+
+map reduce
+dbeaver
+sql
+sqlbolt
+https://www.w3schools.com/js/default.asp
