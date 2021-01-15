@@ -9,3 +9,6 @@ Else, Switch, Let vs Var (escopo e bloco), Operadores matemáticos e lógicos
 
 ## Aula 03 - 13/01/2020
 While, For, Break/Continue, Exercícios
+
+## Aula 04 - 14/01/2020
+ForEach, Funções, Func Anônimas
