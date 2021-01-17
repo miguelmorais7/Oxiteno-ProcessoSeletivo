@@ -12,3 +12,26 @@ While, For, Break/Continue, Exercícios
 
 ## Aula 04 - 14/01/2020
 ForEach, Funções, Func Anônimas
+
+## Aula 05 - 15/01/2020
+Array - Métodos Modificadores: 
+- Push
+- Pop
+- Shift
+- Unshift
+- Splice (add, remove, edit)
+- Sort
+
+Array - Métodos de Acesso:
+- Concat
+- Includes
+- IndexOf
+- Map
+- Join
+- Filter
+- Map
+- Some
+- Reduce
+
+## Aula 06 - 16/01/2020
+Orientação a Objetos - Classe, Objeto, Métodos, Herança, Polimorfismo
