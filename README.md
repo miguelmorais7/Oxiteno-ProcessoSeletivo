@@ -1,19 +1,19 @@
 # Oxiteno-ProcessoSeletivo
 Processo seletivo da empresa Química Oxiteno
 
-## Aula 01 - 11/01/2020
+## Aula 01 - 11/01/2021
 Apresentações, conceito de variáveis, definição de Typescript, If, String, Array
 
-## Aula 02 - 12/01/2020
+## Aula 02 - 12/01/2021
 Else, Switch, Let vs Var (escopo e bloco), Operadores matemáticos e lógicos
 
-## Aula 03 - 13/01/2020
+## Aula 03 - 13/01/2021
 While, For, Break/Continue, Exercícios
 
-## Aula 04 - 14/01/2020
+## Aula 04 - 14/01/2021
 ForEach, Funções, Func Anônimas
 
-## Aula 05 - 15/01/2020
+## Aula 05 - 15/01/2021
 Array - Métodos Modificadores: 
 - Push
 - Pop
@@ -33,5 +33,11 @@ Array - Métodos de Acesso:
 - Some
 - Reduce
 
-## Aula 06 - 16/01/2020
+## Aula 06 - 16/01/2021
 Orientação a Objetos - Classe, Objeto, Métodos, Herança, Polimorfismo
+
+## Aula 07 - 18/01/2021
+HTTP, Http Request, Http Verbs (Get, put, post, delete, patch), Response, XMLHttpRequest
+
+## Aula 08 - 19/01/2020
+XMLHttpRequest, Fetch, Local Storage
