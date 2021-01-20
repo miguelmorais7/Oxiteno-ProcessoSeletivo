@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="control-center">
+        <button id="get-btn">GET Data</button>
+    </section>
+    <!--<script src="./xhr.js"></script>-->
+    <script>
+        const getBtn = document.getElementById('get-btn');
+
+        const getData = () => {
+            /*
+            const xhr = new XMLHttpRequest();
+            //let url = 'http://viacep.com.br/ws/09250760/json/';
+            let url = 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking/?decada=1950';
+            xhr.open('GET', url, true);
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4){
+                    if(xhr.status = 200){
+                        //console.log('xhr: ', xhr);
+                        var header = xhr.getAllResponseHeaders();
+                        //console.log(header);
+                        let info = JSON.parse(xhr.responseText);
+                        for(let i = 0; i < 10; i++){
+                            //console.log(`nomes: ${info.localidade[i]}`)
+                            console.log(`nomes: ${info[0].res[i]}`)
+                        }  
+                    }
+                }
+            }
+            xhr.send();*/
+            let url = 'https://servicodados.ibge.gov.br/api/v1/localidades/distritos';
+            var myHeaders = new Headers();
+            var myInit = { method: 'GET', headers: myHeaders, mode: 'CORS', cache: 'default' };
+            fetch(url, myInit).then(function(response){
+                if(!response.ok){
+                    console.log('ok', response.status)
+                    alert(`Ocorreu um erro \n COD: ${response.status}, ${response.statusText}`)
+                    return
+                }
+
+                response.json().then(function(data){
+                    let select = document.querySelector('#cidades');
+                    let cidades = data;
+
+                    for(let i = 0; i < 10; i++){
+                        let option = document.createElement('option');
+                        option.text = cidades[i].nome;
+                        option.value = cidades[i].id;
+                        select.appendChild(option);
+                    }
+                })
+            });
+        };
+        getBtn.addEventListener('click', getData);
+    </script>
+</body>
+
+</html>
