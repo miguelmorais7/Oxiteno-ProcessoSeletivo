@@ -1,0 +1,30 @@
+<script>
+    if (localStorage.getItem('pessoa')) {
+            let pessoaLS = JSON.parse(localStorage.getItem('pessoa'));
+            console.log(`
+                Nome: ${pessoaLS.pessoa.nome},
+                Idade: ${pessoaLS.pessoa.Idade},
+                Sexo: ${pessoaLS.pessoa.Sexo},
+                Caraceristicas:
+                    Cabelo: ${pessoaLS.pessoa.Caracteristicas.Cabelo},
+                    Olhos: ${pessoaLS.pessoa.Caracteristicas.Olhos},
+            `)
+        }
+        else {
+            const pessoa = {
+                pessoa: {
+                    nome: "Miguel",
+                    idade: 21,
+                    sexo: "Masculino",
+                    caracteristicas: {
+                        Olhos: "Castanhos",
+                        Cabelo: "Castanho",
+                        nariz: "Pequeno"
+                    }
+                }
+            }
+
+            localStorage.setItem('pessoa', JSON.stringify(pessoa));
+            //console.log(pessoa);
+        }
+</script>
