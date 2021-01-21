@@ -39,5 +39,8 @@ Orientação a Objetos - Classe, Objeto, Métodos, Herança, Polimorfismo
 ## Aula 07 - 18/01/2021
 HTTP, Http Request, Http Verbs (Get, put, post, delete, patch), Response, XMLHttpRequest
 
-## Aula 08 - 19/01/2020
+## Aula 08 - 19/01/2021
 XMLHttpRequest, Fetch, Local Storage
+
+## Aula 09 - 20/01/2021
+Promise, Postman, JSON, XML
