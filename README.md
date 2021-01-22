@@ -44,3 +44,6 @@ XMLHttpRequest, Fetch, Local Storage
 
 ## Aula 09 - 20/01/2021
 Promise, Postman, JSON, XML
+
+## Aula 10 - 21/01/2021
+HTML, CSS, Section/Div, Table, etc

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Começo do HEAD-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .corVerde{
+            background-color: greenyellow;
+        }
+        .corAzul{
+            background-color: blue;
+            width: 280px;
+        }
+        p{
+            background-color: blueviolet;
+        } /*Global para todos os paragrafos*/
+        #brown{
+            background-color: brown;
+        }
+        .section1{
+            background-color: cadetblue;
+        }
+        .section2{
+            background-color: yellow;
+        }
+        td{
+            border: 3px solid salmon;
+        }
+    </style>
+</head>
+    <!--Fim do HEAD-->
+<body>
+    <!--<div></div>-->
+    <!--
+    <h1>Aula de hoje: HTML!</h1>
+    <h2>Aula de hoje: HTML!</h2>
+    <h3>Aula de hoje: HTML!</h3>
+    <h4>Aula de hoje: HTML!</h4>
+    <h5>Aula de hoje: HTML!</h5>
+    <h6>Aula de hoje: HTML!</h6>
+    -->
+    <section class="section1">
+        <h1>JavaScript</h1>
+        <div>
+            <p>
+                Objetos
+            </p>
+            <p>
+                Metodos
+            </p>
+        </div>
+    </section>
+    <section class="section2">
+        <h1>HTML</h1>
+        <section>
+            Objetos
+        </section>
+        <section>
+            Metodos
+        </section>
+    </section>
+
+    <br>
+
+    <section>
+        <h1>Table</h1>
+        <!--<table style="border: 3px inherit red;">-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Janeiro</th>
+                    <th>Fevereiro</th>
+                    <th colspan="2">Março</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">123</td>
+                    <td>456</td>
+                    <td>789</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <br>
+
+    <section class="corAzul">
+        <!--
+        <h1>Sessão JavaScript</h1>
+        <p>Texto 1 Texto 1 Texto 1 Texto 1 Texto 1</p>
+        <p>Texto 1 Texto 1 Texto 1 Texto 1 Texto 1</p>
+        -->
+        <h1>Sessão JavaScript</h1>
+        <section>
+            <h1>JavaScript</h1>
+            <div class="corVerde">Bloco div</div>
+            <span style="background-color: green;">Tamanho limitado</span>
+            <span style="background-color: green;">Tamanho limitado</span>
+            <p>testetestetstets</p>
+        </section>
+        
+    </section>
+
+    <section id="brown" class="corVerde">
+        <!--
+        <h1>Sessão JavaScript</h1>
+        <p>Texto 1 Texto 1 Texto 1 Texto 1 Texto 1</p>
+        <p>Texto 1 Texto 1 Texto 1 Texto 1 Texto 1</p>
+        -->
+        <h1>Sessão JavaScript</h1>
+        <p>
+            <span>Texto 1 Texto 1 Texto 1 Texto 1 Texto 1</span>
+            <span>Texto 1 Texto 1 Texto 1 Texto 1 Texto 1</span>
+        </p>   
+    </section>
+</body>
+</html>
