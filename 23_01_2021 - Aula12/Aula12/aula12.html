@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div><button type="button" id="dobrar">Dobra Valores</button></div>
+        <!--<table style="border: 3px inherit red;">-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Janeiro</th>
+                    <th>Fevereiro</th>
+                    <th>Março</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
+
+<script>
+    window.onload = function(){
+
+        const btn = document.querySelector('#dobrar');
+        btn.addEventListener('click', function(){
+            let tds = document.querySelector('#tbody').querySelectorAll('td');
+            
+            tds.forEach((td) =>{
+                td.innerText = Number(td.innerText) ? td.innerText * 2 : 'Não é numero';
+            })
+        });
+        
+        /*btn.addEventListener('click', function(){
+            let trs = document.querySelector('#tbody').querySelectorAll('tr');
+            
+            trs.forEach((tr) =>{
+                console.log(tr);
+                tr.querySelectorAll('td').forEach((td) =>{
+                    td.innerHTML = Number(td.innerText) * 2;
+                })
+            })
+        });*/
+        /*
+        btn.onclick = function(){
+            console.log('Cliquei no botão');
+        }*/
+        /*function dobrar(){
+            console.log('Cliquei no botão');
+        } */  
+        //btn.onclick = dobrar
+        
+        
+        const arr = [
+            [1,2,'l'],
+            [4,5,6],
+            [7,8,9]
+        ]
+        let tbody = document.querySelector('#tbody');
+        //console.log(tr)
+        //console.log('Ja carreguei');
+
+        arr.forEach((linha) =>{
+            let tr = document.createElement('tr');
+            tbody.appendChild(tr);
+            
+            linha.forEach((coluna) =>{
+                let td = document.createElement('td');
+                td.innerText = coluna;
+                tr.appendChild(td);
+            })
+        });
+    }
+</script>
+
+<!--Closure-->
