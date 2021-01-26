@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+        }
+        .box {
+            border: 1px solid #21ebff;
+            padding: 20px;
+            display: flex;
+            width: 500px;        
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+    </style>-->
+    <style>
+        .container{
+            flex-direction: column;
+        }
+
+        .btn-sub{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <button id="back" class="btn-sub">Voltar</button>
+    <div class="container">
+        <div class="box">
+            <span>
+                <h2>Nome: </h2>
+            </span>
+            <span id="name"></span>
+        </div>
+        <div class="box">
+            <span>
+                <h2>Email: </h2>
+            </span>
+            <span id="email"></span>
+        </div>
+        <div class="box">
+            <span>
+                <h2>Telefone: </h2>
+            </span>
+            <span id="phone"></span>
+        </div>
+        <div class="box">
+            <span>
+                <h2>CPF: </h2>
+            </span>
+            <span id="cpf"></span>
+        </div>
+        <div class="box">
+            <span>
+                <h2>Endereço: </h2>
+            </span>
+            <span id="address"></span>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+<script>
+    window.onload = () =>{
+        const back = document.querySelector('#back');
+        back.onclick = () =>{
+            window.history.back();
+        }
+        
+        const url = window.location.search;
+        let params = new URLSearchParams(url);
+        
+        const qsName = params.get('nome');
+        const name = document.querySelector('#name');
+        name.innerText = qsName;
+
+        const qsEmail = params.get('email');
+        const email = document.querySelector('#email');
+        email.innerText = qsEmail;
+
+        const qsPhone = params.get('telefone');
+        const phone = document.querySelector('#phone');
+        phone.innerText = qsPhone;
+
+        const qsCPF = params.get('cpf');
+        const cpf = document.querySelector('#cpf');
+        cpf.innerText = qsCPF;
+
+        const qsAddress = params.get('endereco');
+        const address = document.querySelector('#address');
+        address.innerText = qsAddress;
+
+        console.log(params, url);
+    }
+</script>
