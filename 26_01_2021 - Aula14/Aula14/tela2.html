@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="back" class="btn-sub">Voltar</button>
+    <div class="container">
+        <div class="box">
+            <span>
+                <h2>ID: </h2>
+            </span>
+            <span id="id"></span>
+        </div>
+        <div class="box">
+            <span>
+                <h2>Nome: </h2>
+            </span>
+            <span id="nome"></span>
+        </div>
+        <div class="box">
+            <span>
+                <h2>Motivo: </h2>
+            </span>
+            <span id="motivo"></span>
+        </div>
+        <div class="box">
+            <span>
+                <h2>Setor: </h2>
+            </span>
+            <span id="setor"></span>
+        </div>
+        <div class="box">
+            <span>
+                <h2>dataAbertura: </h2>
+            </span>
+            <span id="dataAbertura"></span>
+        </div>
+        <div class="box">
+            <span>
+                <h2>Urgencia: </h2>
+            </span>
+            <span id="urgencia"></span>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    window.onload = () =>{
+        const obj = [
+            [1, 'Celso', 'Mouse quebrado', 'RH'],
+            [2, 'Fernando', 'Teclado com mau contato', 'Vendas'],
+            [3, 'Larissa', 'Webcam apagada', 'Vendas'],
+            [4, 'Gabriel', 'Queda de rede', 'Operacional'],
+            [5, 'João', 'Computador lento', 'Processamento de dados']
+        ]
+    }
+
+    /*
+    window.onload = () =>{
+        const back = document.querySelector('#back');
+        back.onclick = () =>{
+            window.history.back();
+        }
+    }
+
+    const url = window.location.search;
+    let params = new URLSearchParams(url);
+
+    const qsID = params.get('id');
+    const id = document.querySelector('#id');
+    id.innerText = qsID;
+
+    const qsID = params.get('id');
+    const id = document.querySelector('#id');
+    id.innerText = qsID;*/
+</script>

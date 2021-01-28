@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .myDiv{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="animate" style="display: none;">Vamos animar</button>
+    <button id="removeAll" class="btnRemover">Remover Todos</button>
+    <div class="myDiv" style="display: none;">
+        Hoje tem JQuery
+    </div>
+    <button id="addTr">Adicionar Linhas</button>
+    <ul class="tbody">
+        <!--<li class="essaTr">existo</li>
+        <li class="essaTr">existo2</li>
+        <li class="essaTr">existo3</li>-->
+    </ul>
+    <input type="text" id="nome" value="meu nome">
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+
+        /*$('#animate').on('click', function(){
+            $(".myDiv").animate({
+                opacity: 'toggle',
+                height: 'toggle'
+            }, 3000, function(){
+                alert('Animação finalizada')
+            })
+        });*/
+
+        let cont = 0;
+        let btn = $('#addTr')
+        $('#addTr').on('click', function(){
+            const tr = `<li class='essaTR'> item ${cont} aqui </tr>`
+            cont ++
+            $('#tbody').append(tr)
+        });
+
+        $(document).on('dblclick', '.essaTr', function(){
+            $(this).remove()
+        });
+
+        $('#removeAll').on('click', function(){
+            $('#tbody').find('li').attr('class')
+                .each(function(){
+                    $(this).animate({
+                        opacity: 'toggle',
+                        height: 'toggle'
+                    }, 1000, function(){
+                        $(this).remove()
+                    })
+                })
+        })
+    });
+</script>
+
+
+.hide() esconde elemento
+.show() mostra elemento
+.find('.minhaClasse') encontra o/os elemento com a classe listada
+.each(function(){}) realiza uma ação para cada elemento encontrado
+.animate(...) aplica animações customizadas
+.attr('class') pega o valor de um atributo
+.on('evento/click', function(){}) 
+function.apply(this) aplica texto contexto da função atual para a função invocadora
+.append('.minhaClasse') adiciona conteudo ao final do elemento 
+.prepend()
